@@ -8,7 +8,7 @@ function appendToDisplay(input) {
 }
 
 function clearDisplays() {
-    display.value = null;
+    display.value = null; s
 }
 
 function calculate() {

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,10 +13,12 @@
             align-items: center;
             height: 100vh;
         }
+
         #calculator {
-            background-color: hsl(0, 0%, 10%);
+            background-color: hsl(0, 0%, 10%s);
             overflow: hidden;
         }
+
         #display {
             width: 100%;
             font-size: 5rem;
@@ -25,14 +28,16 @@
             background-color: hsl(0, 0%, 20%);
             color: white;
         }
+
         #keys {
-            display: grid;  
+            display: grid;
             grid-template-columns: repeat(4, 1fr);
             gap: 20px;
         }
+
         button {
             height: 100px;
-            width: 100px;  
+            width: 100px;
             border-radius: 50%;
             border: none;
             background-color: hsl(0, 0%, 20%);
@@ -41,16 +46,19 @@
             font-size: 3rem;
             cursor: pointer;
         }
+
         button:hover {
             background-color: hsl(0, 0%, 40%);
-        }   
+        }
+
         button:active {
             background-color: hsl(0, 0%, 60%);
         }
     </style>
 </head>
+
 <body>
-    
+
 
     <div id="calculator">
         <input id="display" readonly>
@@ -72,9 +80,10 @@
             <button onclick="appendToDisplay('.')">.</button>
             <button onclick="calculate()">=</button>
             <button onclick="clearDisplay('C')">C</button>
-            
+
         </div>
     </div>
     <script src="main.js"></script>
 </body>
+
 </html>
